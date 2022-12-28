@@ -1,1 +1,11 @@
 <h1>Home</h1>
+
+<% #Link work but trouble with rendering checkout session %>
+<a href="/checkout/">Checkout a</a>
+<%= link_to "Checkout link", "/checkout" %>
+<% #When send as post with rooting also, checkout page isn't render %>
+<%= button_to "Checkout button", "/checkout", remote: true %>
+
+<% #When send as post with rooting also, checkout page isn't render %>
+<%= button_to "Passer commande (NEXT GEN)", thpcheckout_create_path(total: "42"), class: "btn btn-primary", remote: true %>
+
